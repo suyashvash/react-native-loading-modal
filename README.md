@@ -1,6 +1,8 @@
+![Logo](https://res.cloudinary.com/practicaldev/image/fetch/s--8CEpKqFD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mcxxxssx71v3s531jxop.png)
+
 # React Native Loading modal
 
-> Platform - iOS + Android 
+Platform - iOS + Android 
 
 This module provides a simple loading modal for React native apps.
 A Loading modal is an modal with Activity indicator used while perfroming some process and to restrict user while it happends
