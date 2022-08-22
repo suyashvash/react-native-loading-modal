@@ -1,4 +1,4 @@
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--8CEpKqFD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mcxxxssx71v3s531jxop.png" alt="react-native-loading-modal banner" style="width:100px;"/>
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--8CEpKqFD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mcxxxssx71v3s531jxop.png" alt="react-native-loading-modal banner" style="width:500px;"/>
 
 # React Native Loading modal
 
