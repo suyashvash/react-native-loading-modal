@@ -1,6 +1,7 @@
 {
   "name": "react-native-loading-modal",
-  "version": "1.0.1",
+  "version": "1.0.4",
+   "type": "module",
   "description": "A React native component for showing  loading modal",
   "main": "index.js",
   "scripts": {
@@ -19,9 +20,20 @@
     "loading-modal",
     "loading-modal-react-native"
   ],
-  "author": "suyash.codes",
+  "author": {
+    "name": "Suyash Vashishtha",
+    "email": "suyashvashishtha@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.72.1"
+  },
+  "homepage": "https://github.com/suyashvash/react-native-loading-modal#react-native-loading-modal",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/suyashvash/react-native-loading-modal.git"
+  },
+  "bugs": {
+      "url": "https://github.com/suyashvash/react-native-loading-modal/issues"
   }
 }
