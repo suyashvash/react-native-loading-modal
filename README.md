@@ -36,16 +36,16 @@ In order to control the Modal visibilty use React State in `modalVisible` prop.
 
 ## Props
 
-| Name          | Description |
-| --------------| ----------- |
-| modalVisible  | Toggles the visibilty of modal       |
-| color         | Color of Activity indicator        |
-| task          | Custom label to show with Activity indicator        |
-| title         | Custom text to show with Loading...        |
+| Name          |Type| Description |
+| --------------|---------| ----------- |
+| modalVisible  |`boolean`| Toggles the visibilty of modal       |
+| color         |`string`| Color of Activity indicator        |
+| task          |`string`| Custom label to show with instead of `Loading....`        |
+| title         |`string`| Custom text to show with `Loading...`  as `Image Loading....`      |
 
 
 ## Found a Bug ?
-Create an Issue and we will try to fix it
+Create an Issue and I will try to fix it
 
 ## Contribution
 I am constantly trying to add more types of modal and modal usage in it.
