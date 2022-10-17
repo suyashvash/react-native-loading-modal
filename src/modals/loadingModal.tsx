@@ -2,10 +2,36 @@ import React from 'react';
 import { View, Modal, StyleSheet, Text, ActivityIndicator } from 'react-native';
 
 interface Props {
+    /**
+     * Defines when to show the modal
+     * @param bool modalVisible
+    */
     modalVisible: boolean;
+
+    /**
+     * Color of Activity Indicator (loading circle)
+     * @param string color
+    */
     color: string;
+
+    /**
+     * Text to display with the loading circle
+     * @param string task
+    */
     task: string;
+
+
+    /**
+     * Text to display with the  Loading....
+     * @param string title
+    */
     title: string;
+
+
+    /**
+     * Font family of the loading text ( task or label )
+     * @param string fontFamily
+    */
     fontFamily: string;
 }
 
