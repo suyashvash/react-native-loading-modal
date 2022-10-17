@@ -1,10 +1,21 @@
 import React from 'react';
 import { View, Modal, StyleSheet, Text, ActivityIndicator } from 'react-native';
 
-export default function LoadingModal(props) {
+interface Props {
+    modalVisible: boolean;
+    color: string;
+    task: string;
+    title: string;
+    fontFamily: string;
+}
+
+export default function LoadingModal(props:Props) {
+    
+    const fontFamily = props.fontFamily ? props.fontFamily : 'sans-serif';
 
     return (
-        <Modal animationType="fade"
+        <Modal 
+            animationType="fade"
             transparent={true}
             visible={props.modalVisible}
             statusBarTranslucent={true}>
@@ -13,9 +24,9 @@ export default function LoadingModal(props) {
                 <View style={styles.modalView}>
                     <ActivityIndicator size="large" color={props.color} />
                     {props.task ?
-                        <Text style={styles.modalText}>{props.task}</Text>
+                        <Text style={[styles.modalText,{fontFamily:fontFamily}]}>{props.task}</Text>
                         :
-                        <Text style={styles.modalText}>{props.title} Loading..</Text>
+                        <Text style={[styles.modalText,{fontFamily:fontFamily}]}>{props.title} Loading..</Text>
                     }
                 </View>
             </View>
