@@ -42,6 +42,7 @@ In order to control the Modal visibilty use React State in `modalVisible` prop.
 | color         |`string`| Color of Activity indicator        |
 | task          |`string`| Custom label to show with instead of `Loading....`        |
 | title         |`string`| Custom text to show with `Loading...`  as `Image Loading....`      |
+| fontFamily    |`string`| Font family for loading text |
 
 
 ## Found a Bug ?

@@ -1,6 +1,6 @@
 {
   "name": "react-native-loading-modal",
-  "version": "1.0.7",
+  "version": "1.0.8",
    "type": "module",
   "description": "A React native component for showing  loading modal",
   "main": "index.js",

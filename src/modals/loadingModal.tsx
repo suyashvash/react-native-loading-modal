@@ -3,7 +3,7 @@ import { View, Modal, StyleSheet, Text, ActivityIndicator } from 'react-native';
 
 interface Props {
     /**
-     * Defines when to show the modal
+     * Toggles the visibilty of modal 
      * @param bool modalVisible
     */
     modalVisible: boolean;
