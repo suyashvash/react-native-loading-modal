@@ -37,8 +37,6 @@ interface Props {
 
 export default function LoadingModal(props:Props) {
     
-    const fontFamily = props.fontFamily ? props.fontFamily : 'sans-serif';
-
     return (
         <Modal 
             animationType="fade"
@@ -50,9 +48,9 @@ export default function LoadingModal(props:Props) {
                 <View style={styles.modalView}>
                     <ActivityIndicator size="large" color={props.color} />
                     {props.task ?
-                        <Text style={[styles.modalText,{fontFamily:fontFamily}]}>{props.task}</Text>
+                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily}]}>{props.task}</Text>
                         :
-                        <Text style={[styles.modalText,{fontFamily:fontFamily}]}>{props.title} Loading..</Text>
+                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily}]}>{props.title} Loading..</Text>
                     }
                 </View>
             </View>
