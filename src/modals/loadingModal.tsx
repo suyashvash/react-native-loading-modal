@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Modal, StyleSheet, Text, ActivityIndicator } from 'react-native';
+import { View, Modal, StyleSheet, Text, ActivityIndicator, StyleProp, ViewStyle } from 'react-native';
 
 interface Props {
     /**
@@ -33,9 +33,30 @@ interface Props {
      * @param string fontFamily
     */
     fontFamily: string;
+
+    /**
+     * Dark mode of the loading modal, default is false
+     * @param boolean darkMode
+    */
+   darkMode: boolean;
+
+   /**
+     * Style of the loading modal container
+     * @param string fontFamily
+    */
+   modalStyle: StyleProp<ViewStyle>;
+
+    /**
+     * Style of the loading modal Text
+     * @param string fontFamily
+    */
+    textStyle: object;
+
 }
 
 export default function LoadingModal(props:Props) {
+
+
     
     return (
         <Modal 
@@ -45,17 +66,23 @@ export default function LoadingModal(props:Props) {
             statusBarTranslucent={true}>
                 
             <View style={styles.centeredView}>
-                <View style={styles.modalView}>
+                <View style={[styles.modalView ,props.modalStyle, props.darkMode && {backgroundColor:'#121212'}]}>
                     <ActivityIndicator size="large" color={props.color} />
                     {props.task ?
                         <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily}]}>{props.task}</Text>
                         :
-                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily}]}>{props.title} Loading..</Text>
+                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily},props.darkMode && {color:'white'} ,props.textStyle]}>{props.title} Loading..</Text>
                     }
                 </View>
             </View>
         </Modal>
     )
+}
+
+LoadingModal.defaultProps = {
+    modalVisible: false,
+    darkMode: false,
+    
 }
 
 
