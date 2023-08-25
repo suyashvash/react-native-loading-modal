@@ -68,10 +68,8 @@ export default function LoadingModal(props:Props) {
             <View style={styles.centeredView}>
                 <View style={[styles.modalView ,props.modalStyle, props.darkMode && {backgroundColor:'#121212'}]}>
                     <ActivityIndicator size="large" color={props.color} />
-                    {props.task ?
-                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily}]}>{props.task}</Text>
-                        :
-                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily},props.darkMode && {color:'white'} ,props.textStyle]}>{props.title} Loading..</Text>
+                    {
+                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily},props.darkMode && {color:'white'} ,props.textStyle]}>{props.title} {props.task || 'Loading..'}</Text>
                     }
                 </View>
             </View>
