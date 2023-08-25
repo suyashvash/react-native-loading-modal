@@ -66,12 +66,10 @@ export default function LoadingModal(props:Props) {
             statusBarTranslucent={true}>
                 
             <View style={styles.centeredView}>
-                <View style={[styles.modalView ,props.modalStyle, props.darkMode && {backgroundColor:'#121212'}]}>
+                <View style={[styles.modalView , props.darkMode && {backgroundColor:'#121212'}, props.modalStyle]}>
                     <ActivityIndicator size="large" color={props.color} />
-                    {props.task ?
-                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily}]}>{props.task}</Text>
-                        :
-                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily},props.darkMode && {color:'white'} ,props.textStyle]}>{props.title} Loading..</Text>
+                    {
+                        <Text style={[styles.modalText,props.fontFamily && {fontFamily:props.fontFamily},props.darkMode && {color:'white'} ,props.textStyle]}>{props.title ? props.title + ' ' : ''}{typeof props.task ==='undefined'?'Loading..':props.task}</Text>
                     }
                 </View>
             </View>
