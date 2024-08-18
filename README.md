@@ -19,7 +19,7 @@ npm i react-native-loading-modal
 Import the modal using 
 
 ```js
-import { LoadingModal } from "react-native-loading-modal";
+import LoadingModal from "react-native-loading-modal";
 
 ```
 
@@ -39,10 +39,9 @@ In order to control the Modal visibilty use React State in `modalVisible` prop.
 | Name          |Type| Description |
 | --------------|---------| ----------- |
 | modalVisible  |`boolean`| Toggles the visibilty of modal       |
-| color         |`string`| Color of Activity indicator        |
-| task          |`string`| Custom label to show with instead of `Loading....`        |
-| title         |`string`| Custom text to show with `Loading...`  as `Image Loading....`      |
-| fontFamily    |`string`| Font family for loading text |
+| color         |`string`|  Color of Activity indicator        |
+| title         |`string`|  Custom text to show instead of default `Loading...` |
+| fontFamily    |`string`|  Font family for loading text |
 | darkMode      |`boolean`| Switch dark mode or light more, default is `false` |
 | modalStyle    |`View Style / Object`| Custom Stylesheet of modal |
 | textStyle     |`Text Style / Object`| Custom Stylesheet of text |
