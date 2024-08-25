@@ -45,6 +45,7 @@ In order to control the Modal visibilty use React State in `modalVisible` prop.
 | darkMode      |`boolean`| Switch dark mode or light more, default is `false` |
 | modalStyle    |`View Style / Object`| Custom Stylesheet of modal |
 | textStyle     |`Text Style / Object`| Custom Stylesheet of text |
+| indicatorSize | `small` or `large` | Size of the Activity Indicator |
 
 
 ## Found a Bug ?

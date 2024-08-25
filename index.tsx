@@ -10,7 +10,8 @@ export default function LoadingModal({
     color = 'blue',
     fontFamily,
     modalStyle,
-    textStyle
+    textStyle,
+    indicatorSize = 'large'
 }: LoadingModalProps) {
 
 
@@ -24,7 +25,7 @@ export default function LoadingModal({
 
             <View style={styles.centeredView}>
                 <View style={[styles.modalView, darkMode && { backgroundColor: '#121212' }, modalStyle]}>
-                    <ActivityIndicator size="large" color={color} />
+                    <ActivityIndicator size={indicatorSize} color={color} />
                     <Text style={[styles.modalText, fontFamily && { fontFamily: fontFamily }, darkMode && { color: 'white' }, textStyle]}>{title}</Text>
                 </View>
             </View>

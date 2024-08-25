@@ -44,6 +44,13 @@ export interface LoadingModalProps {
      * @param string fontFamily
     */
     textStyle?: StyleProp<TextStyle>;
+
+
+    /**
+     * Size of the loading indicator
+     * @param string indicatorSize
+    */
+    indicatorSize?: 'small' | 'large';
 }
 
 declare const LoadingModal: React.FC<LoadingModalProps>;
